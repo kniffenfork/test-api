@@ -18,7 +18,7 @@ public class FibController {
         this.fibService = fibService;
     }
 
-    @GetMapping("/{num}")
+    @GetMapping("/fib/{num}")
     public ResponseEntity<List<Long>> fib(@PathVariable("num") Integer num) {
         return ResponseEntity.ok(fibService.fib(num));
     }
