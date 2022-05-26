@@ -19,7 +19,7 @@ public class HelloController {
         return ResponseEntity.ok("hello world!");
     }
 
-    @GetMapping("/{name}")
+    @GetMapping("/hello/{name}")
     @Operation(
             summary = "приветствие пользователя",
             description = "Позволяет поприветствовать пользователя"

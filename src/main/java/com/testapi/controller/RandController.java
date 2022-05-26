@@ -12,6 +12,4 @@ public class RandController {
     public ResponseEntity<Double> random() {
         return ResponseEntity.ok(Math.random());
     }
-
-
 }
